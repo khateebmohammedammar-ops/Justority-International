@@ -865,7 +865,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 4rem;
   left: 0;
   width: 100%;
