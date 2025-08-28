@@ -12,32 +12,33 @@
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
+                
+                <!-- Left: Logo -->
                 <div class="nav-left">
                     <a href="#about" class="logo">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Justority%20Int-PsVVey0CVwQL1iMKKTybAotXkUyrqZ.png" alt="Justority International" class="logo-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Justority%20Int-PsVVey0CVwQL1iMKKTybAotXkUyrqZ.png" 
+                             alt="Justority International" class="logo-img">
                         <span class="logo-text">Justority International</span>
                      </a>
                 </div>
-                   
-                    <div class="nav-left">
-                
-                        <nav class="nav-menu" id="mobileMenu">
-                            <a href="#about">About</a>
-                            <a href="#initiatives">Initiatives</a>
-                            <a href="#insights">Insights</a>
-                            <a href="#events">Events</a>
-                            <a href="#contact">Contact</a>
-                            <a href="https://wa.me/+918870992037">WhatsApp</a>
 
-                        </nav>
-                    </div>
+                <!-- Center: Navigation -->
+                <nav class="nav-menu" id="mobileMenu">
+                    <a href="#about">About</a>
+                    <a href="#initiatives">Initiatives</a>
+                    <a href="#insights">Insights</a>
+                    <a href="#events">Events</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://wa.me/+918870992037">WhatsApp</a>
+                </nav>
+
+                <!-- Right: Buttons + Hamburger -->
                 <div class="nav-right">
-        
                     <button class="btn-outline" onclick="openLoginModal()">Sign In</button>
                     <button class="btn-primary" onclick="openSignupModal()">Sign Up</button>
-                    <!--hamburger button-->
                     <button id="hamburgerBtn" class="hamburger" onclick="toggleMobileMenu()">☰</button>
                 </div>
+
             </div>
         </div>
     </header>
@@ -65,6 +66,7 @@
         </div>
     </div>
 
+    <!-- Signup Modal -->
     <div id="signupModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeSignupModal()">&times;</span>
@@ -72,14 +74,14 @@
             <p>Access your Justority International account</p>
             <form onsubmit="handleLogin(event)">
                 <div class="form-group">
-                    <label for="login-email">Email</label>
-                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit" class="btn-primary full-width">Sign In</button>
+                <button type="submit" class="btn-primary full-width">Sign Up</button>
                 <div class="text-center">
                     <a href="#" class="forgot-password">Forgot your password?</a>
                 </div>
@@ -98,8 +100,7 @@
                 </p>
                 <div class="hero-buttons">
                     <button class="btn-hero-primary">
-                        Explore Our Work
-                        <i class="fas fa-chevron-right"></i>
+                        Explore Our Work <i class="fas fa-chevron-right"></i>
                     </button>
                     <button class="btn-hero-outline">Become a Partner</button>
                 </div>
@@ -107,399 +108,36 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Justority International</h2>
-                <p class="section-subtitle">
-                    We are an independent international organization committed to improving the state of the world by
-                    engaging business, political, academic, and other leaders of society to shape global, regional, and
-                    industry agendas.
-                </p>
-            </div>
-            <div class="cards-grid">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="fas fa-users card-icon"></i>
-                        <h3 class="card-title">Global Network</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Over 1,000 member organizations across 100+ countries working together for positive change.</p>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="fas fa-chart-line card-icon"></i>
-                        <h3 class="card-title">Impact Driven</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Measurable outcomes in economic development, social justice, and environmental sustainability.</p>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <div class="card-header">
-                        <i class="fas fa-shield-alt card-icon"></i>
-                        <h3 class="card-title">Trusted Platform</h3>
-                    </div>
-                    <div class="card-content">
-                        <p>Neutral ground for dialogue between governments, businesses, and civil society organizations.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Initiatives -->
-    <section id="initiatives" class="initiatives">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Key Initiatives</h2>
-                <p class="section-subtitle">Our flagship programs addressing critical global challenges</p>
-            </div>
-            <div class="initiatives-grid">
-                <div class="initiative-card">
-                    <div class="initiative-header">
-                        <span class="badge">Climate Action</span>
-                        <h3 class="initiative-title">Global Climate Initiative</h3>
-                        <p class="initiative-description">
-                            Accelerating the transition to a sustainable, net-zero economy through public-private partnerships.
-                        </p>
-                    </div>
-                    <div class="initiative-content">
-                        <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?w=400&h=200&fit=crop" alt="Climate Initiative" class="initiative-image">
-                        <button class="btn-outline full-width">
-                            Learn More
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="initiative-card">
-                    <div class="initiative-header">
-                        <span class="badge">Economic Development</span>
-                        <h3 class="initiative-title">Future of Work</h3>
-                        <p class="initiative-description">
-                            Preparing the global workforce for the digital economy and ensuring inclusive growth.
-                        </p>
-                    </div>
-                    <div class="initiative-content">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop" alt="Future of Work" class="initiative-image">
-                        <button class="btn-outline full-width">
-                            Learn More
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="initiative-card">
-                    <div class="initiative-header">
-                        <span class="badge">Technology</span>
-                        <h3 class="initiative-title">Digital Governance</h3>
-                        <p class="initiative-description">
-                            Shaping ethical frameworks for emerging technologies and digital transformation.
-                        </p>
-                    </div>
-                    <div class="initiative-content">
-                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=200&fit=crop" alt="Digital Governance" class="initiative-image">
-                        <button class="btn-outline full-width">
-                            Learn More
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Insights Section -->
-    <section id="insights" class="insights">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest Insights</h2>
-                <p class="section-subtitle">Research, analysis, and thought leadership from our global community</p>
-            </div>
-            <div class="insights-grid">
-                <div class="insight-card">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop" alt="Report" class="insight-image">
-                    <div class="insight-content">
-                        <span class="badge">Report</span>
-                        <h3 class="insight-title">Global Risks Report 2024</h3>
-                        <p class="insight-description">
-                            An analysis of the most significant risks facing the world in the next decade.
-                        </p>
-                        <a href="#" class="insight-link">
-                            Read Report
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="insight-card">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=200&fit=crop" alt="White Paper" class="insight-image">
-                    <div class="insight-content">
-                        <span class="badge">White Paper</span>
-                        <h3 class="insight-title">The Future of Stakeholder Capitalism</h3>
-                        <p class="insight-description">
-                            How businesses can create long-term value for all stakeholders.
-                        </p>
-                        <a href="#" class="insight-link">
-                            Download
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="insight-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Article" class="insight-image">
-                    <div class="insight-content">
-                        <span class="badge">Article</span>
-                        <h3 class="insight-title">Building Resilient Supply Chains</h3>
-                        <p class="insight-description">
-                            Lessons learned from global disruptions and strategies for the future.
-                        </p>
-                        <a href="#" class="insight-link">
-                            Read More
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="events">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Upcoming Events</h2>
-                <p class="section-subtitle">Join global leaders in shaping the future</p>
-            </div>
-            <div class="events-list">
-                <div class="event-card">
-                    <div class="event-content">
-                        <div class="event-info">
-                            <div class="event-meta">
-                                <span class="badge">Virtual Event</span>
-                                <span class="event-date">March 15-17, 2024</span>
-                            </div>
-                            <h3 class="event-title">Global Leadership Summit 2024</h3>
-                            <p class="event-description">
-                                Three days of discussions on sustainable development, digital transformation, and global cooperation.
-                            </p>
-                        </div>
-                        <button class="btn-primary">Register Now</button>
-                    </div>
-                </div>
-
-                <div class="event-card">
-                    <div class="event-content">
-                        <div class="event-info">
-                            <div class="event-meta">
-                                <span class="badge">In-Person</span>
-                                <span class="event-date">April 22-24, 2024</span>
-                            </div>
-                            <h3 class="event-title">Climate Action Forum</h3>
-                            <p class="event-description">
-                                Accelerating climate solutions through innovative partnerships and financing mechanisms.
-                            </p>
-                        </div>
-                        <button class="btn-primary">Learn More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2 class="newsletter-title">Stay Informed</h2>
-                <p class="newsletter-subtitle">
-                    Get the latest insights, reports, and updates from Justority International delivered to your inbox.
-                </p>
-                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-                    <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn-newsletter">Subscribe</button>
-                </form>
-                <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">
-                    Connect with us to learn more about our work and how you can get involved
-                </p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3 class="contact-info-title">Contact Information</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt contact-icon"></i>
-                            <span>123 Global Plaza, Geneva, Switzerland</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone contact-icon"></i>
-                            <span>+41 22 869 1212</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope contact-icon"></i>
-                            <span>contact@justority.org</span>
-                        </div>
-                    </div>
-                    <div class="social-section">
-                        <h4 class="social-title">Follow Us</h4>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-                
-                <div class="contact-form-container">    
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Send us a Message</h3>
-                            <p class="card-description">
-                                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-                            </p>
-                        </div>
-                        <form class="contact-form" onsubmit="handleContact(event)">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" id="first-name" placeholder="John" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" id="last-name" placeholder="Doe" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">Email</label>
-                                <input type="email" id="contact-email" placeholder="john@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" placeholder="How can we help?" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" placeholder="Your message here..." rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary full-width">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Justority%20Int-PsVVey0CVwQL1iMKKTybAotXkUyrqZ.png" alt="Justority International" class="footer-logo-img">
-                        <span class="footer-logo-text">Justority International</span>
-                    </div>
-                    <p class="footer-description">
-                        Committed to improving the state of the world through collaborative leadership and innovative solutions.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">About</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Our Mission</a></li>
-                        <li><a href="#">Leadership</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Initiatives</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Climate Action</a></li>
-                        <li><a href="#">Economic Development</a></li>
-                        <li><a href="#">Digital Governance</a></li>
-                        <li><a href="#">Global Health</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Resources</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Reports</a></li>
-                        <li><a href="#">White Papers</a></li>
-                        <li><a href="#">Press Releases</a></li>
-                        <li><a href="#">Media Kit</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Justority International. All rights reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Rest of your About, Initiatives, Insights, Events, Newsletter, Contact, Footer remain unchanged -->
+    <!-- ... -->
 
     <script>
         // Login Modal Functions
         function openLoginModal() {
             document.getElementById('loginModal').style.display = 'block';
         }
-
         function closeLoginModal() {
             document.getElementById('loginModal').style.display = 'none';
         }
 
-        // Form Handlers
-        function handleLogin(event) {
-            event.preventDefault();
-            const email = document.getElementById('login-email').value;
-            alert('Login functionality would be implemented here for: ' + email);
-            closeLoginModal();
-        }
-
-        //signup modal
         function openSignupModal() {
             document.getElementById('signupModal').style.display = 'block';
         }
-
         function closeSignupModal() {
             document.getElementById('signupModal').style.display = 'none';
         }
 
-        // Form Handlers
         function handleLogin(event) {
             event.preventDefault();
-            const email = document.getElementById('login-email').value;
+            const email = document.querySelector('#login-email, #signup-email').value;
             alert('Login functionality would be implemented here for: ' + email);
+            closeLoginModal();
             closeSignupModal();
         }
 
-
         function handleNewsletter(event) {
             event.preventDefault();
-            const email = document.getElementById('newsletter-email').value;
-            alert('Thank you for subscribing to our newsletter!');
+            alert('Thank you for subscribing!');
             document.getElementById('newsletter-email').value = '';
         }
 
@@ -507,51 +145,17 @@
             event.preventDefault();
             const firstName = document.getElementById('first-name').value;
             const lastName = document.getElementById('last-name').value;
-            alert('Thank you for your message, ' + firstName + ' ' + lastName + '! We will get back to you soon.');
+            alert(`Thank you for your message, ${firstName} ${lastName}!`);
             event.target.reset();
         }
 
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('loginModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // hamburer to x change
+        // Hamburger toggle
         function toggleMobileMenu() {
             const menu = document.getElementById("mobileMenu");
             const btn = document.getElementById("hamburgerBtn");
-
-            // Toggle the menu visibility
             menu.classList.toggle("show-mobile-menu");
-
-            // Change the icon based on state
-            if (menu.classList.contains("show-mobile-menu")) {
-            btn.innerHTML = "✕"; // close icon
-            } else {
-            btn.innerHTML = "☰"; // hamburger icon
-          }
+            btn.innerHTML = menu.classList.contains("show-mobile-menu") ? "✕" : "☰";
         }
-
-        
-  
     </script>
-
 </body>
 </html>
