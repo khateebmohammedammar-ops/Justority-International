@@ -857,6 +857,9 @@ body {
   font-size: 1.5rem;
   color: #374151;
   cursor: pointer;
+  margin-right: 1rem; /* keeps it away from the screen edge */
+}
+
 }
 
 /* Mobile Menu Toggle */
@@ -907,20 +910,17 @@ body {
 
 /* Show hamburger and hide nav on small screens */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
   .nav-menu {
     display: none;
-    position: fixed;
-    top: 4 rem;
+    position: fixed;  /* overlay on screen */
+    top: 4rem;        /* right below the header */
     left: 0;
     width: 100%;
     flex-direction: column;
     background: white;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2000;
   }
 
   .nav-menu.show-mobile-menu {
@@ -928,3 +928,6 @@ body {
   }
 }
 
+    display: flex;
+  }
+}
