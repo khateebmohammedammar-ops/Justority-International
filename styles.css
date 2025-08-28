@@ -28,11 +28,28 @@ body {
 }
 
 .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 1rem; /* add spacing so hamburger isn't on screen edge */
+  position: relative;
+}
+
+/* Fix nav-right on mobile */
+@media (max-width: 768px) {
+  .nav-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 4rem;
+    gap: 0.5rem; /* smaller gap so buttons + hamburger fit */
+  }
+
+  .hamburger {
+    margin-left: 0.5rem; /* keeps some breathing space */
+    margin-right: 0;     /* no extra push */
+  }
 }
+
 
 .nav-left {
     display: flex;
